@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>希希希吖 ✨</title>
+    <style>
+        body {
+            background-color: #F0FFFF; /* 天青色 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: "Microsoft YaHei", sans-serif;
+            text-align: center;
+        }
+        .container {
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0,139,139,0.1);
+        }
+        h1 { color: #008B8B; font-size: 36px; margin-bottom: 10px; }
+        p { color: #666; font-size: 18px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>希希希吖 ✨</h1>
+        <p>欢迎来到我的专属空间</p>
+        <p style="font-size: 14px; color: #999;">右下角是耳朵元元</p>
+    </div>
+
+    <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.19/libs/cn/index.js"></script>
+    <script>
+      new CozeWebSDK.WebChatClient({
+        config: {
+          bot_id: '7619275579711602739', // 你的新 Bot ID
+        },
+        componentProps: {
+          title: '希希的耳朵元元',
+        },
+        auth: {
+          type: 'token',
+          // 使用你提供的真实 Token
+          token: 'pat_y1IfS57nDed1AttgDNo7xcuyNgbd1Gce9dooDmA6iZklVa12fDYg0sDMmE4GEwYM',
+          onRefreshToken: function () {
+            return 'pat_y1IfS57nDed1AttgDNo7xcuyNgbd1Gce9dooDmA6iZklVa12fDYg0sDMmE4GEwYM'
+          }
+        }
+      });
+    </script>
+</body>
+</html>
